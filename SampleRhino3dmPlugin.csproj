@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net7.0;net48</TargetFrameworks>
+    <Version>1.0</Version>
+    <Title>SampleRhino3dmPlugin</Title>
+    <Description>Description of SampleRhino3dmPlugin</Description>
+    <TargetExt>.rhp</TargetExt>
+    <RhinoMacLauncher>8</RhinoMacLauncher>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\**\*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="RhinoCommon" Version="8.4.24044.15001" IncludeAssets="compile;build" />
+    <PackageReference Include="Rhino3dm" Version="8.4.0" Aliases="Rhino3dm">
+        <IncludeAssets>all</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  
+  
+</Project>
